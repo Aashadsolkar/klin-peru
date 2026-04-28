@@ -38,6 +38,15 @@ export default function Header1({
           </div>
           <div className="col-xl-2 col-md-4 col-3">
             <ul className="nav-icon d-flex justify-content-end align-items-center">
+              <li className="d-none d-md-block">
+                <Link
+                  href="/contact"
+                  className="tf-btn animate-btn"
+                  style={{ borderRadius: "999px", padding: "12px 24px" }}
+                >
+                  Contact Us
+                </Link>
+              </li>
               {/* <li className="nav-search">
                 <a
                   href="#search"

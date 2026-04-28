@@ -53,7 +53,7 @@ export default function Hero() {
                     </div>
                     <div className="box-btn-slider fade-item fade-item-3">
                       <Link
-                        href={`/shop-default`}
+                        href={`/`}
                         className="tf-btn btn-large font-2 text-uppercase animate-btn bg-brown-14 border-0 hero-btn"
                       >
                         {slide.buttonText}

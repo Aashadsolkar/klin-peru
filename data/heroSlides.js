@@ -350,13 +350,13 @@ export const pickleballSlides = [
 export const handcraftSlides = [
   {
     image: "/images/slider/handcraft/slider-1.jpeg",
-    subtitle: "WELCOME TO VINETA",
+    subtitle: "WELCOME TO KLIN PERU",
     title: "Crafted by Hand, <br /> Made with Heart",
     buttonText: "EXPLORE OUR CREATIONS",
   },
   {
     image: "/images/slider/handcraft/slider-2.png",
-    subtitle: "WELCOME TO VINETA",
+    subtitle: "WELCOME TO KLIN PERU",
     title: "Naturally Beautiful, <br /> Handcrafted for You",
     buttonText: "Shop the Collection",
   },

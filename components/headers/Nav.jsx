@@ -10,8 +10,8 @@ export default function Nav() {
     { label: "About Us", href: "/" },
     { label: "Products", href: "/" },
     { label: "Blogs", href: "/" },
-    { label: "Contact Us", href: "/" },
-    { label: "Request a Quote", href: "/" },
+    // { label: "Contact Us", href: "/" },
+    { label: "Request a quote", href: "/" },
   ];
 
   const isMenuActive = (href) => {
@@ -22,7 +22,7 @@ export default function Nav() {
   return (
     <>
       {menuItems.map((item) => (
-        <li className="menu-item" key={item.href}>
+        <li className="menu-item" key={item.label}>
           <Link
             href={item.href}
             className={`item-link ${isMenuActive(item.href) ? "menuActive" : ""}`}

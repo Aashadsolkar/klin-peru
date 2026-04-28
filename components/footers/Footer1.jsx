@@ -167,14 +167,15 @@ export default function Footer1({
             <div className="footer-inner-wrap s3">
               <div className="footer-col-block inner-col">
                 <div className="footer-heading footer-heading-mobile text-xl fw-medium">
-                  About Us
+                  Quick Manu
                 </div>
                 <div className="tf-collapse-content">
                   <ul className="footer-menu-list">
+                    <li>Home</li>
                     <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Our Store</li>
-                    <li>Our Story</li>
+                    <li>Products</li>
+                    <li>Blogs</li>
+                    <li>Request a quote</li>
                   </ul>
                 </div>
               </div>

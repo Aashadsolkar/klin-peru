@@ -737,16 +737,16 @@ export const collections2 = [
 
 export const handcraftBanners = [
   {
-    image: "/images/banner/handcraft-2.jpg",
+    image: "/images/banner/handcraft-2.jpeg",
     title: "Request a quote",
-    description: "We are always here to help you",
+    description: "We are always here to help you.",
     linkTitle: "Submit a form",
   },
   {
-    image: "/images/banner/handcraft-3.jpg",
+    image: "/images/banner/handcraft-3.jpeg",
     title: "Contact us",
     description:
-      "We are always here to help you with your questions and concerns or any other inquiries.",
+      "We are always here to help you.",
     linkTitle: "Contact us",
   },
 ];

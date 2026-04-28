@@ -249,46 +249,23 @@ export default function MobileMenu() {
             </ul>
           </div>
           <div className="mb-other-content">
-            <div className="group-icon">
-              <Link href={`/wish-list`} className="site-nav-icon">
-                <i className="icon icon-heart" />
-                Wishlist
-              </Link>
-              <a
-                href="#login"
-                data-bs-toggle="offcanvas"
-                className="site-nav-icon"
-              >
-                <i className="icon icon-user" />
-                Login
-              </a>
-            </div>
+            
             <div className="mb-notice">
               <Link href={`/contact-us`} className="text-need">
                 Need Help?
               </Link>
             </div>
             <div className="mb-contact">
-              <p>Address: 123 Yarran st, Punchbowl, NSW 2196, Australia</p>
+              <p>Address: 123 Demo Street, Lima, Peru 15001</p>
             </div>
             <ul className="mb-info">
               <li>
-                Email: <b className="fw-medium">clientcare@ecom.com</b>
+                Email: <b className="fw-medium">hello@klinperu-demo.com</b>
               </li>
               <li>
-                Phone: <b className="fw-medium">1.888.838.3022</b>
+                Phone: <b className="fw-medium">+51 900 123 456</b>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="mb-bottom">
-          <div className="bottom-bar-language">
-            <div className="tf-currencies">
-              <CurrencySelect />
-            </div>
-            <div className="tf-languages">
-              <LanguageSelect parentClassName="image-select center style-default type-languages" />
-            </div>
           </div>
         </div>
       </div>

@@ -70,7 +70,7 @@ export default function Products1() {
                       <div className="card-product style-wishlist style-3 card-product-size none-hover">
                         <div className="card-product-wrapper">
                           <Link
-                            href={`/product-detail/${product.id}`}
+                            href={`/`}
                             className="product-img"
                           >
                             <Image
@@ -147,7 +147,7 @@ export default function Products1() {
                         </div>
                         <div className="card-product-info text-center">
                           <Link
-                            href={`/product-detail/${product.id}`}
+                            href={`/`}
                             className="name-product link fw-medium text-md font-9"
                           >
                             {product.title}
@@ -162,9 +162,9 @@ export default function Products1() {
                             </span>
                           </p> */}
                           <a
-                            href="#shoppingCart"
+                            // href="#"
                             data-bs-toggle="offcanvas"
-                            onClick={() => addProductToCart(product.id)}
+                            onClick={() => {}}
                             className="tf-btn btn-out-line-dark mt_10"
                           >
                             <span className="text-md fw-medium">
@@ -185,6 +185,13 @@ export default function Products1() {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .card-product-wrapper {
+          border-radius: 14px;
+          overflow: hidden;
+          box-shadow: 12px 14px 28px rgba(0, 0, 0, 0.24);
+        }
+      `}</style>
     </section>
   );
 }

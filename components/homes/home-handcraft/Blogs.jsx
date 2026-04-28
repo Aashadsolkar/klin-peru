@@ -3,7 +3,7 @@ import { blogPosts7 } from "@/data/blogs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Blogs() {
@@ -29,6 +29,11 @@ export default function Blogs() {
               observer: true,
               observeParents: true,
               slidesPerGroup: 1,
+              loop: true,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
               navigation: {
                 clickable: true,
                 nextEl: ".nav-next-new",
@@ -40,13 +45,13 @@ export default function Blogs() {
                 1200: { slidesPerView: 3, spaceBetween: 24, slidesPerGroup: 4 },
               },
             }}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, Autoplay]}
           >
             {blogPosts7.map((post, index) => (
               <SwiperSlide className="swiper-slide" key={index}>
                 <div className="blog-item-v2">
                   <div className="entry-image hover-img">
-                    <Link href={`/#`} className="image-box img-style">
+                    <Link href={`/`} className="image-box img-style">
                       <Image
                         src={post.image}
                         alt="image"
@@ -63,7 +68,7 @@ export default function Blogs() {
                         <li className="item font-9">{post.date}</li>
                       </ul>
                       <Link
-                        href={`/blog-single`}
+                        href={`/`}
                         className="title fw-medium link text-xl text-line-clamp-2 font-9"
                       >
                         {post.title}

@@ -118,20 +118,20 @@ export default function RootLayout({ children }) {
       <body>
         <Context>
           {children}
-          <DemoModal />
-          <CartComponent />
-          <Compare />
-          <Login />
+          {/* <DemoModal /> */}
+          {/* <CartComponent /> */}
+          {/* <Compare /> */}
+          {/* <Login /> */}
           <MobileMenu />
-          <Quickview />
-          <SearchModal />
-          <Toolbar /> <SizeGuide />
-          <QuestionModal />
-          <ShareModal />
-          <DbSidebar />
+          {/* <Quickview /> */}
+          {/* <SearchModal /> */}
+          {/* <Toolbar /> <SizeGuide /> */}
+          {/* <QuestionModal /> */}
+          {/* <ShareModal /> */}
+          {/* <DbSidebar /> */}
         </Context>
         <ScrollTop />
-        <RtlToggler />
+        {/* <RtlToggler /> */}
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const testimonialData = [
   {
-    image: "/images/testimonial/tes-handcraft-1.jpg",
+    image: "/images/testimonial/tes-handcraft-1.jpeg",
     name: "Liam O'Connor",
     product: "Trash can",
     review:

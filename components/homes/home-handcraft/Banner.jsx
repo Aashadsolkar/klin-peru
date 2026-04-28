@@ -11,11 +11,16 @@ export default function Banner() {
             <div className="hover-shine hover-img">
               <div className="image-banner image shine-item img-style">
                 <Image
-                  src="/images/banner/handcraft-1.png"
+                  src="/images/banner/handcraft-1.jpeg"
                   alt=""
                   className="lazyload"
                   width={780}
                   height={863}
+                  style={{
+                    width: "100%",
+                    height: "520px",
+                    objectFit: "cover",
+                  }}
                 />
               </div>
             </div>
@@ -32,7 +37,7 @@ export default function Banner() {
               </div>
               <div className="box-btn-banner">
                 <Link
-                  href={`/about-us`}
+                  href={`/`}
                   className="tf-btn animate-btn btn-red btn-lg fw-medium bg-brown-14 border-0"
                 >
                   ABOUT US
