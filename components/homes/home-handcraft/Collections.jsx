@@ -38,7 +38,7 @@ export default function Collections() {
               640: { slidesPerView: 1, spaceBetween: 16, slidesPerGroup: 1 },
               768: { slidesPerView: 1.2, spaceBetween: 20, slidesPerGroup: 1 },
               1024: { slidesPerView: 2, spaceBetween: 28, slidesPerGroup: 1 },
-              1440: { slidesPerView: 2.1, spaceBetween: 32, slidesPerGroup: 1 },
+              1440: { slidesPerView: 2, spaceBetween: 32, slidesPerGroup: 1 },
             },
           }}
           modules={[Pagination, Navigation]}
@@ -75,8 +75,12 @@ export default function Collections() {
                     href={`/`}
                     className="cta-button"
                   >
-                    <span className="button-text">{item.linkTitle || "Explore Collection"}</span>
-                    <span className="button-arrow">→</span>
+                    <Link
+                      href="/"
+                      className="tf-btn animate-btn border-0 header-cta-btn bg-brown-14"
+                    >
+                      {item.linkTitle}
+                    </Link>
                   </Link>
                 </div>
               </div>
@@ -135,6 +139,7 @@ export default function Collections() {
           transition: opacity 0.5s ease;
           display: flex;
           align-items: stretch;
+          padding-bottom: 20px;
         }
 
         .collection-slide.swiper-slide-active {
@@ -168,6 +173,8 @@ export default function Collections() {
           width: 100%;
           height: 320px;
           overflow: hidden;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
           background: linear-gradient(135deg, #e8e8e8 0%, #f0f0f0 100%);
           flex-shrink: 0;
         }
@@ -176,6 +183,8 @@ export default function Collections() {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
           transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
@@ -189,6 +198,8 @@ export default function Collections() {
           left: 0;
           width: 100%;
           height: 100%;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
           background: linear-gradient(
             180deg,
             rgba(0, 0, 0, 0) 40%,

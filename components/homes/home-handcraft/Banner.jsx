@@ -40,7 +40,7 @@ export default function Banner() {
                   href={`/`}
                   className="tf-btn animate-btn btn-red btn-lg fw-medium bg-brown-14 border-0"
                 >
-                  ABOUT US
+                  KNOW MORE
                 </Link>
               </div>
             </div>

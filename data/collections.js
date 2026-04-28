@@ -746,7 +746,7 @@ export const handcraftBanners = [
     image: "/images/banner/handcraft-3.jpeg",
     title: "Contact us",
     description:
-      "We are always here to help you.",
+      "Have questions or need assistance?",
     linkTitle: "Contact us",
   },
 ];

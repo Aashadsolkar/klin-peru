@@ -18,8 +18,8 @@ $primary: #ff6f61;
 
 :root {
     // color
-    --primary: #ff6f61;
-    --primary-2: #ff9a90;
+    --primary: #0097cc;
+    --primary-2: #e6fdfd;
     --primary-3: #ffc5c0;
     --primary-4: #fff1ef;
     --primary-green: #39ae52;
@@ -77,3 +77,8 @@ $primary: #ff6f61;
 .primary-3 {
     --primary: #d62c2c;
 }
+
+.logo-color {
+    color: #0097cc;
+}
+

@@ -25,7 +25,7 @@ export default function Header1({
             </a>
           </div>
           <div className="col-xl-2 col-md-4 col-6">
-            <Link href={`/`} className="fs-3 fw-bold">
+            <Link href={`/`} className="fs-3 fw-bold logo-color">
               Klin Peru
             </Link>
           </div>
@@ -40,8 +40,8 @@ export default function Header1({
             <ul className="nav-icon d-flex justify-content-end align-items-center">
               <li className="d-none d-md-block">
                 <Link
-                  href="/contact"
-                  className="tf-btn animate-btn"
+                  href="/"
+                  className="tf-btn animate-btn bg-brown-14 border-0"
                   style={{ borderRadius: "999px", padding: "12px 24px" }}
                 >
                   Contact Us

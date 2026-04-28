@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const testimonialData = [
@@ -48,6 +48,9 @@ export default function Testimonials() {
               </div>
 
               <div className="box-left wow fadeInUp">
+                <h4 className="fw-normal font-9 text-center mb_20">
+                  Client Testimonials
+                </h4>
                 <Swiper
                   dir="ltr"
                   className="swiper tf-tes-main"
@@ -69,7 +72,11 @@ export default function Testimonials() {
                     },
                   }}
                   slidesPerView={1}
-                  modules={[Navigation, Pagination]}
+                  modules={[Autoplay, Navigation, Pagination]}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }}
                   pagination={{
                     el: ".sw-pagination-tes",
                     clickable: true,
@@ -122,13 +129,13 @@ export default function Testimonials() {
                             </div>
                             <p className="name-item text-md fs-14 d-flex align-items-center justify-content-center">
                               <span className="text-main">
-                                Product purchased:&nbsp;
+                                Company Name:&nbsp;
                               </span>
                               <a
                                 href="#"
                                 className="fw-medium text-sm link text-line-clamp-1"
                               >
-                                {item.product}
+                                Klin Peru
                               </a>
                             </p>
                           </div>

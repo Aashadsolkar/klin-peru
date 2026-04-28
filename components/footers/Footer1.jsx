@@ -41,12 +41,13 @@ export default function Footer1({
       className={` ${parentClass} ${
         paddingBottom ? "footer-pb-2" : "xl-pb-70"
       } ${cloud ? "footer-cloud" : ""}`}
+      style={{ backgroundColor: "var(--primary-2)" }}
     >
       <div className="footer-top">
         <div className={` ${fullWidth ? "container-full" : "container"}  `}>
           <div className="footer-top-wrap">
             <div className="footer-logo">
-              <span className="fw-bold fs-3 text-dark">Klin Peru</span>
+              <span className="fw-bold fs-3  logo-color">Klin Peru</span>
             </div>
             <ul className="tf-social-icon style-large">
               <li>
@@ -176,6 +177,7 @@ export default function Footer1({
                     <li>Products</li>
                     <li>Blogs</li>
                     <li>Request a quote</li>
+                    <li>Contact us</li>
                   </ul>
                 </div>
               </div>
@@ -187,7 +189,7 @@ export default function Footer1({
         <div className="container">
           <div className="footer-bottom-wrap">
             <p className="text-dark text-center">
-              Copyright © 2025 by <span className="fw-medium">Klin Peru.</span> All
+              Copyright © 2026 by <span className="fw-medium">Klin Peru.</span> All
               Rights Reserved.
             </p>
             {/* <ul className="tf-payment">
@@ -275,6 +277,22 @@ export default function Footer1({
           </div>
         </div>
       </div>
+      <style jsx>{`
+        #footer {
+          background-color: var(--primary-2) !important;
+        }
+
+        .footer-top,
+        .footer-body,
+        .footer-bottom,
+        .footer-top-wrap,
+        .row-footer,
+        .footer-col-block,
+        .footer-inner-wrap,
+        .footer-bottom-wrap {
+          border-color: #000 !important;
+        }
+      `}</style>
     </footer>
   );
 }

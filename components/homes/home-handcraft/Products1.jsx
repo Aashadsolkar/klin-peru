@@ -165,7 +165,7 @@ export default function Products1() {
                             // href="#"
                             data-bs-toggle="offcanvas"
                             onClick={() => {}}
-                            className="tf-btn btn-out-line-dark mt_10"
+                            className="tf-btn btn-out-line-dark mt_10 product-view-btn"
                           >
                             <span className="text-md fw-medium">
                               View Product
@@ -190,6 +190,12 @@ export default function Products1() {
           border-radius: 14px;
           overflow: hidden;
           box-shadow: 12px 14px 28px rgba(0, 0, 0, 0.24);
+        }
+
+        .product-view-btn:hover {
+          background-color: #0097cc !important;
+          border-color: #0097cc !important;
+          color: #ffffff !important;
         }
       `}</style>
     </section>
